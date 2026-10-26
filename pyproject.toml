@@ -1,7 +1,7 @@
 [project]
 name = "man-want-love"
 version = "0.1.0"
-description = "Add your description here"
+description = "a 2d adventure game."
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
