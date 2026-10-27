@@ -6,8 +6,8 @@ import pygame
 pygame.init()
 
 
-SCREEN_WIDTH = 800
-SCREEN_HIGHT = 800
+SCREEN_WIDTH = 700
+SCREEN_HIGHT = 700
 
 run_game = True
 # set screen hight , widht
@@ -17,7 +17,10 @@ clock = pygame.time.Clock()
 # set a name for game
 pygame.display.set_caption("man-want-love❤️")
 
-sky_surface_img = pygame.image.load("./assets/land-assets/Background/Day/1.png")
+main_surface_img = pygame.image.load(
+    "./assets/land-assets/Backgrounds/nature_1/orig.png"
+)
+
 
 while run_game:
 
@@ -26,7 +29,7 @@ while run_game:
         if event.type == pygame.QUIT:
             run_game = False
 
-    screen.blit(sky_surface_img, (0, 0))
+    screen.blit(main_surface_img, (0, 0))
     # update everthing we draw
     pygame.display.update()
     clock.tick(60)
