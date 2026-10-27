@@ -17,7 +17,7 @@ clock = pygame.time.Clock()
 # set a name for game
 pygame.display.set_caption("man-want-love❤️")
 
-day_surface_img = pygame.image.load("./assets/land-assets/Background/Day/1.png")
+sky_surface_img = pygame.image.load("./assets/land-assets/Background/Day/1.png")
 
 while run_game:
 
@@ -26,6 +26,7 @@ while run_game:
         if event.type == pygame.QUIT:
             run_game = False
 
+    screen.blit(sky_surface_img, (0, 0))
     # update everthing we draw
     pygame.display.update()
     clock.tick(60)
