@@ -18,9 +18,9 @@ clock = pygame.time.Clock()
 pygame.display.set_caption("man-want-love❤️")
 
 main_surface_img = pygame.image.load(
-    "./assets/Land-assets/Backgrounds/nature_1/orig.png"
+    "./assets/Land_assets/Backgrounds/nature_1/orig.png"
 )
-ground_tile_1 = pygame.image.load("./assets/Land_assets/Tiles/Tile_01.png")
+ground_tile_1 = pygame.image.load("./assets/Land_assets/Tiles/ground_base.png")
 
 
 while run_game:
@@ -31,7 +31,8 @@ while run_game:
             run_game = False
 
     screen.blit(main_surface_img, (0, 0))
-    screen.blit(ground_tile_1, (0, 0))
+    screen.blit(ground_tile_1, (0, 150))
+    screen.blit(ground_tile_1, (220, 120))
     # update everthing we draw
     pygame.display.update()
     clock.tick(60)
