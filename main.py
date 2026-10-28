@@ -5,5 +5,5 @@ pygame.init()
 
 
 screen = pygame.display.set_mode((800, 800))
-pygame.display.set_caption()
+pygame.display.set_caption("shooter game")
 clock = pygame.time.Clock()
