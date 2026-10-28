@@ -3,5 +3,4 @@ import pygame
 # pygame setup
 pygame.init()
 
-
-pygame.
+clock = pygame.time.Clock()
